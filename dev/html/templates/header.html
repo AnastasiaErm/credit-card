@@ -15,18 +15,120 @@
     <div class="page-main">
         <!-- Beginning User Navigation Menu -->
         <div class="page-main__menu">
-            <nav class="page-main__nav">
-                <ul class="menu page-main__list">
-                    <li class="menu__item"><a class="menu__link" href="#">Личный кабинет</a></li>
-                    <li class="menu__item"><a a class="menu__link menu__link--active" href="#">Платежи (активная)</a></li>
-                    <li class="menu__item"><a a class="menu__link" href="#">История платежей</a></li>
-                    <li class="menu__item"><a a class="menu__link" href="#">Настройки</a></li>
-                    <li class="menu__item"><a a class="menu__link" href="#">Выйти</a></li>
+            <nav class="main-nav">
+                <ul class="main-nav__list">
+                    <li class="main-nav__item"><a class="main-nav__link" href="#">Личный кабинет</a></li>
+                    <li class="main-nav__item"><a a class="main-nav__link main-nav__link--active" href="#">Платежи
+                            (активная)</a></li>
+                    <li class="main-nav__item"><a a class="main-nav__link" href="#">История платежей</a></li>
+                    <li class="main-nav__item"><a a class="main-nav__link" href="#">Настройки</a></li>
+                    <li class="main-nav__item"><a a class="main-nav__link" href="#">Выйти</a></li>
                 </ul>
             </nav>
+            <!-- End User Navigation Menu -->
         </div>
-        <!-- End User Navigation Menu -->
 
+        <main class="page-main__data">
+            <!-- Beginning User Form Verification Card  -->
+            <section class="data">
+                <h2 class="data__title">
+                    Информация по оплате:
+                </h2>
+                <div class="data__list">
+                    <h2 class="data__score">Номер счета:</h2>
+                    <h2 class="data__value">87123658716587</h2>
+                    <h2 class="data__payment">Сумма платежа:</h2>
+                    <h2 class="data__value">100 руб.</h2>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2 class="card__title">
+                    Данные банковской карты
+                </h2>
+                <form class="card__form">
+                    <div class="card-content">
+                        <h2 class="card-content__title-num">
+                            Номер карты
+                        </h2>
+                        <input name="card-number-1" class="card-content__number" type="number">
+                        <input name="card-number-2" class="card-content__number" type="number">
+                        <input name="card-number-3" class="card-content__number" type="number">
+                        <input name="card-number-4" class="card-content__number" type="number">
+                        <h2 class="card-content__time">
+                            Срок действия
+                        </h2>
+                        <select class="month card-content__month" name="card-validation-month">
+                            <option class="month__item" value="1">01</option>
+                            <option class="month__item" value="2">02</option>
+                            <option class="month__item" value="3">03</option>
+                            <option class="month__item" value="4">04</option>
+                            <option class="month__item" value="5">05</option>
+                            <option class="month__item" value="6">06</option>
+                            <option class="month__item" value="7">07</option>
+                            <option class="month__item" value="8">08</option>
+                            <option class="month__item" value="9">09</option>
+                            <option class="month__item" value="10">10</option>
+                            <option class="month__item" value="11">11</option>
+                            <option class="month__item" value="12">12</option>
+                        </select>
+
+                        <select class="year card-content__year" name="card-validation-year">
+                            <option class="year__item" value="2019">2019</option>
+                            <option class="year__item" value="2020">2020</option>
+                            <option class="year__item" value="2021">2021</option>
+                            <option class="year__item" value="2022">2022</option>
+                            <option class="year__item" value="2023">2023</option>
+                        </select>
+                        <input class="card-content__person" type="text">
+                    </div>
+                    <div class="card-back">
+                        <h2 class="card-back__title-code">
+                            Код CVV2 / CVC2
+                        </h2>
+                        <input name="code" class="card-back__code" type="number">
+                    </div>
+
+                    <div class="card-button">
+                        <input name="button-payment" type="button" class="card-button__payment" value="Оплатить">
+                    </div>
+                </form>
+                <!-- End User Form Verification Card  -->
+            </section>
+            <!-- Beginning Description  -->
+            <section class="description">
+                <div class="description__text">
+                    Исходя из астатической системы координат Булгакова, соединение стабильно. Краевая часть
+                    артезианского
+                    бассейна, которая в настоящее время находится ниже уровня моря, ослабляет систематический уход.
+                    Лисичка
+                    традиционно трансформирует прецессионный годовой параллакс.
+                </div>
+                <div class="description__text">
+                    Исходя из астатической системы координат Булгакова, соединение стабильно. Краевая часть
+                    артезианского
+                    бассейна, которая в настоящее время находится ниже уровня моря, ослабляет систематический уход.
+                    Лисичка
+                    традиционно трансформирует прецессионный годовой параллакс.
+                </div>
+                <div class="description__text">
+                    Выклинивание абсолютно аккумулирует твердый pадиотелескоп Максвелла.
+                </div>
+                <div class="description__text">
+                    Алмаз слагает горст. Делювий длительно колеблет лазерный подвижный объект.
+                </div>
+                <div class="description__text">
+                    Устойчивость, например, параллельна. Аргумент перигелия определяет боксит. Проекция вертикально
+                    дает
+                    уходящий диабаз. Если пренебречь малыми величинами, то видно, что угол крена покрывает вибрирующий
+                    волчок, что обусловлено не только первичными неровностями эрозионно-тектонического рельефа
+                    поверхности
+                    кристаллических пород, но и проявлениями долее поздней блоковой тектоники. Засветка неба заставляет
+                    иначе взглянуть на то, что такое волчок.
+                </div>
+                <!-- End Description  -->
+            </section>
+        </main>
     </div>
 
     <script src="assets/js/bundle.js"></script>
