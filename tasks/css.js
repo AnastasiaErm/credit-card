@@ -63,7 +63,7 @@ gulp.task('css', () =>
     ))
 
     .pipe(autoprefixer({
-      browsers: ['last 3 version'],
+      browsers: ['last 5 version'],
     }))
 
     .pipe(gulpif(
