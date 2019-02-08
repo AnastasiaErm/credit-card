@@ -1,0 +1,45 @@
+.main-nav {
+    &__item {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+
+        &--active {
+            background-color: $color-active-nav;
+        }
+    }
+
+    &__link {
+        
+        background-color: $color-nav-main;
+        font-size: $font-size-nav;
+        font-weight: bold;
+        font-family: $font-family-opensans;
+        line-height: 24px;
+        padding: 28px;
+        padding-right: 129px;
+        transition: .5ms;
+
+        text-decoration: none;
+        color: $color-main;
+
+        &:hover {
+            background-color: $color-active-nav;
+            color: $color-active-font;
+        }
+
+        &--active {
+            background-color: $color-active-nav;
+            color: $color-active-font;
+        }
+
+        &--exit {
+            color: $color-active-font;
+            border-top: 1px solid rgba(42, 45, 55, .42);
+            
+        }
+        &--main {
+            background-color: $color-nav;
+        }
+    }
+}

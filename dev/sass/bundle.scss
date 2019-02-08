@@ -1,4 +1,5 @@
 @charset 'utf-8';
+@import 'common/index';
 @import 'blocks/index';
 
 * {
@@ -7,19 +8,11 @@
     box-sizing: border-box;
 }
 
-body {
+.page {
     background-color: #101114;
-    color: #ffffff;
 }
 
 img {
     max-width: 100%;
     vertical-align: middle;
-}
-
-.page-main {
-    width: 1000px;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
 }
