@@ -1,0 +1,10 @@
+.card {
+    &__title {
+        font-family: $font-family-opensans;
+        color: $color-black;
+        font-size: 22px;
+        font-weight: bold;
+        line-height: 25.45px;
+        margin-bottom: 22px;
+    }
+}

@@ -1,21 +1,3 @@
-//==============================================
-// Layout/Manifest of Layout
-//==============================================
-
-// @import 'page-main';
 @import 'main-nav';
-.page-main {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    padding-top: 79px;
-    
-    &__menu {
-        display: flex;
-    }
-    &__page-main__data {
-        display: flex;
-        
-        
-    }
-}
+@import 'data';
+@import 'card';

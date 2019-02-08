@@ -1,0 +1,23 @@
+.data {
+    &__title {
+        margin-bottom: 23px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 35px;
+
+    }
+
+    &__score,
+    &__payment {
+        flex-basis: 20%;
+    }
+
+    &__value {
+        flex-basis: 80%;
+        color: $color-black;
+    }
+}
