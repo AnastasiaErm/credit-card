@@ -13,11 +13,15 @@
 
     &__score,
     &__payment {
-        flex-basis: 20%;
+        flex-basis: 35%;
+    }
+
+    &__score {
+        margin-bottom: 5px;
     }
 
     &__value {
-        flex-basis: 80%;
+        flex-basis: 65%;
         color: $color-black;
     }
 }

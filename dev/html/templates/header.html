@@ -51,16 +51,19 @@
                         <h2 class="card-content__title-num">
                             Номер карты
                         </h2>
-                        <input name="card-number-1" class="card-content__number" type="number">
-                        <input name="card-number-2" class="card-content__number" type="number">
-                        <input name="card-number-3" class="card-content__number" type="number">
-                        <input name="card-number-4" class="card-content__number" type="number">
-                        <h2 class="card-content__time">
+                        <div class="card-content__numbers">
+                            <input name="card-number-1" class="card-content__number" type="number">
+                            <input name="card-number-2" class="card-content__number" type="number">
+                            <input name="card-number-3" class="card-content__number" type="number">
+                            <input name="card-number-4" class="card-content__number" type="number">
+
+                        </div>
+                        <h2 class="card-content__title-num">
                             Срок действия
                         </h2>
                         <select class="month card-content__month" name="card-validation-month">
                             <option class="month__item" value="1">01</option>
-                            <option class="month__item" value="2">02</option>
+                            <option selected="selected" class="month__item" value="2">02</option>
                             <option class="month__item" value="3">03</option>
                             <option class="month__item" value="4">04</option>
                             <option class="month__item" value="5">05</option>
@@ -80,14 +83,14 @@
                             <option class="year__item" value="2022">2022</option>
                             <option class="year__item" value="2023">2023</option>
                         </select>
-                        <input class="card-content__person" type="text">
+                        <input class="card-content__person" placeholder="Держатель карты" type="text">
                     </div>
-                    <div class="card-back">
+                    <!-- <div class="card-back">
                         <h2 class="card-back__title-code">
                             Код CVV2 / CVC2
                         </h2>
                         <input name="code" class="card-back__code" type="number">
-                    </div>
+                    </div> -->
 
                     <div class="card-button">
                         <input name="button-payment" type="button" class="card-button__payment" value="Оплатить">
@@ -98,7 +101,7 @@
         </main>
         <footer class="description">
             <!-- Beginning Description  -->
-                <!-- <div class="description__text">
+            <!-- <div class="description__text">
                     Исходя из астатической системы координат Булгакова, соединение стабильно. Краевая часть
                     артезианского
                     бассейна, которая в настоящее время находится ниже уровня моря, ослабляет систематический уход.
@@ -127,7 +130,7 @@
                     кристаллических пород, но и проявлениями долее поздней блоковой тектоники. Засветка неба заставляет
                     иначе взглянуть на то, что такое волчок.
                 </div> -->
-                <!-- End Description  -->
+            <!-- End Description  -->
         </footer>
     </div>
 
