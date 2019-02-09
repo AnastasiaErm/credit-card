@@ -1,4 +1,10 @@
 .card {
+
+    &__form {
+
+        position: relative;
+    }
+
     &__title {
         font-family: $font-family-opensans;
         color: $color-black;
@@ -9,15 +15,24 @@
     }
 
     &-content {
+        position: relative;
+        background-color: $color-card;
+        z-index: 999;
         border: 1px solid $color-border;
         width: 350px;
         border-radius: 10px;
         padding-top: 25px;
         padding-left: 16px;
         margin-bottom: 40px;
+        transition: 0.4s;
 
         &__title-num {
             margin-bottom: 5px;
+        }
+
+        &:hover {
+            box-shadow: -6px -6px 20px -10px rgba(0, 0, 0, 0.5);
+            transition: 0.6s;
         }
 
         &__number {
@@ -76,12 +91,52 @@
         }
     }
 
-    &-back {}
+    &-back {
+        position: absolute;
+        text-align: end;
+        background-color: $color-card;
+        width: 370px;
+        top: 40px;
+        left: 190px;
+        border: 1px solid $color-border;
+        border-radius: 10px;
+        padding-bottom: 88px;
+        font-weight: 400;
+        line-height: 21px;
+
+        &::before {
+            content: '';
+            display: block;
+            height: 42px;
+            background-color: $color-border;
+            margin-top: 26px;
+            margin-bottom: 19px;
+        }
+
+        &__title-code {
+            margin-bottom: 4px;
+            color: $color-grey;
+            font-family: "ArialMT";
+            font-size: $font-size-card;
+           
+            margin-right: 24px;
+        }
+
+        &__code {
+            color: #bec6cf;
+            width: 138px;
+            padding: 15px 10px 14px 20px;
+            border: 1px solid $color-border;
+            font-family: $font-family-arial;        
+            margin-right: 15px;
+            background: url(./../img/hint.png) no-repeat 95px 10px;
+            background-size: 26px;
+        }
+    }
 
     &-button {
-        margin-bottom: 45px;
-
         &__payment {
+            margin-bottom: 45px;
             width: 133px;
             padding: 12px;
             border: none;
@@ -99,10 +154,13 @@
             &:hover {
                 transition: all 0.6s ease-in-out;
                 transform: scale(1.1);
+
             }
         }
 
     }
+
+
 
 }
 
