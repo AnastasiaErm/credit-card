@@ -11,7 +11,6 @@
 </head>
 
 <body class="page">
-
     <div class="page-main">
         <!-- Beginning User Navigation Menu -->
         <div class="page-main__menu">
@@ -49,41 +48,41 @@
                     </h2>
                     <form class="card__form">
                         <div class="card-content">
-                            <h3 class="card-content__title-num">
-                                Номер карты
-                            </h3>
-                            <div class="card-content__numbers">
+                            <fieldset class="card-content__numbers">
+                                <legend class="card-content__title-num">Номер карты</legend>
                                 <input name="card-number-1" class="card-content__number" type="number">
                                 <input name="card-number-2" class="card-content__number" type="number">
                                 <input name="card-number-3" class="card-content__number" type="number">
                                 <input name="card-number-4" class="card-content__number" type="number">
 
-                            </div>
-                            <h3 class="card-content__title-num">
-                                Срок действия
-                            </h3>
-                            <select class="month card-content__month" name="card-validation-month">
-                                <option class="month__item" value="1">01</option>
-                                <option selected="selected" class="month__item" value="2">02</option>
-                                <option class="month__item" value="3">03</option>
-                                <option class="month__item" value="4">04</option>
-                                <option class="month__item" value="5">05</option>
-                                <option class="month__item" value="6">06</option>
-                                <option class="month__item" value="7">07</option>
-                                <option class="month__item" value="8">08</option>
-                                <option class="month__item" value="9">09</option>
-                                <option class="month__item" value="10">10</option>
-                                <option class="month__item" value="11">11</option>
-                                <option class="month__item" value="12">12</option>
-                            </select>
+                            </fieldset>
+                            <fieldset class="card-content__time">
+                                <legend class="card-content__title-num">
+                                    Срок действия
+                                </legend>
+                                <select class="month card-content__month" name="card-validation-month">
+                                    <option class="month__item" value="1">01</option>
+                                    <option selected="selected" class="month__item" value="2">02</option>
+                                    <option class="month__item" value="3">03</option>
+                                    <option class="month__item" value="4">04</option>
+                                    <option class="month__item" value="5">05</option>
+                                    <option class="month__item" value="6">06</option>
+                                    <option class="month__item" value="7">07</option>
+                                    <option class="month__item" value="8">08</option>
+                                    <option class="month__item" value="9">09</option>
+                                    <option class="month__item" value="10">10</option>
+                                    <option class="month__item" value="11">11</option>
+                                    <option class="month__item" value="12">12</option>
+                                </select>
 
-                            <select class="year card-content__year" name="card-validation-year">
-                                <option class="year__item" value="2019">2019</option>
-                                <option class="year__item" value="2020">2020</option>
-                                <option class="year__item" value="2021">2021</option>
-                                <option class="year__item" value="2022">2022</option>
-                                <option class="year__item" value="2023">2023</option>
-                            </select>
+                                <select class="year card-content__year" name="card-validation-year">
+                                    <option class="year__item" value="2019">2019</option>
+                                    <option class="year__item" value="2020">2020</option>
+                                    <option class="year__item" value="2021">2021</option>
+                                    <option class="year__item" value="2022">2022</option>
+                                    <option class="year__item" value="2023">2023</option>
+                                </select>
+                            </fieldset>
                             <input class="card-content__person" placeholder="Держатель карты" type="text">
                         </div>
                         <div class="card-back">
@@ -100,7 +99,7 @@
                     <!-- End User Form Verification Card  -->
                 </section>
             </main>
-            <footer class="description">
+            <footer class="description page-main__description">
                 <!-- Beginning Description  -->
                 <p class="description__text">
                     Исходя из астатической системы координат Булгакова, соединение стабильно. Краевая часть

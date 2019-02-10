@@ -1,0 +1,27 @@
+/* Beginning Page Style */
+.page {
+    background-color: #101114;
+    &-main {
+        display: flex;
+        justify-content: center;
+        margin-top: 79px;
+        margin-bottom: 79px;
+        font-size: 16px;
+        color: $color-grey;
+        line-height: 21px;
+        min-width: 320px;
+        
+
+        &__data {
+            background-color: $color-card;
+            padding: 43px 161px 45px 30px;
+            
+
+        }
+        &__content {
+            width: 639px;
+            
+        }
+    }
+}
+/* End Page Style */

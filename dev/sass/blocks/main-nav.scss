@@ -1,25 +1,26 @@
-
+/* Beginning Menu Style */
 .main-nav { 
     &__item {
         display: flex;
         flex-direction: column;
         list-style: none;
+        text-align: left;
 
         &--active {
             background-color: $color-active-nav;
         }
     }
     &__link {
-        background-color: $color-nav-main;
-        font-size: $font-size-nav;
-        font-weight: bold;
         font-family: $font-family-opensans;
+        font-size: $font-size-nav;
+        font-weight: 700;
         line-height: 24px;
-        padding: 28px;
-        padding-right: 129px;
+        color: $color-main;
+        background-color: $color-nav-main;
+        padding: 25px 99px 26px 28px;
         transition: .5ms;
         text-decoration: none;
-        color: $color-main;
+        
 
         &:hover {
             background-color: $color-active-nav;
@@ -42,3 +43,4 @@
         }
     }
 }
+/* End Menu Style */

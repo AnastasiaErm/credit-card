@@ -1,13 +1,15 @@
+/* Beginning Description Style */
 .description {
     padding: 23px 26px 20px 30px;
     background-color: $color-black;
     &__text {
-        width: 500px;
-        font-family: "ArialMT";
+        
+        font-family: $font-family-arial;
         font-size: 12px;
         font-weight: 400;
         line-height: 18px;
         color: $color-description;
-        margin-bottom: 10px;
+        margin-bottom: 11px;
     }
 }
+/* End Description Style */

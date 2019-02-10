@@ -1,17 +1,19 @@
+/* Beginning Card Style */
 .card {
 
     &__form {
 
         position: relative;
+        width: 350px;
     }
 
     &__title {
         font-family: $font-family-opensans;
         color: $color-black;
         font-size: 22px;
-        font-weight: bold;
+        font-weight: 700;
         line-height: 25.45px;
-        margin-bottom: 22px;
+        margin-bottom: 19px;
     }
 
     &-content {
@@ -19,15 +21,14 @@
         background-color: $color-card;
         z-index: 999;
         border: 1px solid $color-border;
-        width: 350px;
         border-radius: 10px;
-        padding-top: 25px;
-        padding-left: 16px;
-        margin-bottom: 40px;
+        padding: 25px 16px 14px 15px;
+
         transition: 0.4s;
+        margin-bottom: 36px;
 
         &__title-num {
-            margin-bottom: 5px;
+            margin-bottom: 3px;
         }
 
         &:hover {
@@ -37,7 +38,7 @@
 
         &__number {
             border: 1px solid $color-border;
-            padding: 11px 11px 10px 11px;
+            padding: 9px 10px 10px 11px;
             font-family: $font-family-arial;
             font-size: $font-size-card;
             text-align: center;
@@ -45,12 +46,16 @@
             font-weight: normal;
             line-height: 21px;
             width: 65px;
-            margin-right: 9px;
-            margin-bottom: 17px;
+            margin-right: 4px;
+            margin-bottom: 13px;
 
+            &s {
+                border: 0 none;
+            }
         }
 
         &__time {
+            border: 0 none;
             margin-bottom: 5px;
         }
 
@@ -59,9 +64,9 @@
             font-size: $font-size-card;
             border: 1px solid $color-border;
             width: 70px;
-            padding: 11px;
-            margin-right: 9px;
-            margin-bottom: 12px;
+            padding: 10px;
+            margin-right: 4px;
+            margin-bottom: 7px;
 
         }
 
@@ -81,9 +86,9 @@
             width: 319px;
             border: 1px solid $color-border;
             font-family: $font-family-arial;
-            font-weight: 400;
+            font-weight: normal;
             line-height: 21px;
-            margin-bottom: 14px;
+
 
             &::placeholder {
                 color: #bec6cf;
@@ -96,12 +101,12 @@
         text-align: end;
         background-color: $color-card;
         width: 370px;
-        top: 40px;
-        left: 190px;
+        top: 22px;
+        left: 192px;
         border: 1px solid $color-border;
         border-radius: 10px;
-        padding-bottom: 88px;
-        font-weight: 400;
+        padding-bottom: 87px;
+        font-weight: normal;
         line-height: 21px;
 
         &::before {
@@ -110,33 +115,34 @@
             height: 42px;
             background-color: $color-border;
             margin-top: 26px;
-            margin-bottom: 19px;
+            margin-bottom: 14px;
         }
 
         &__title-code {
             margin-bottom: 4px;
             color: $color-grey;
-            font-family: "ArialMT";
+            font-family: "$font-family-arial";
             font-size: $font-size-card;
-           
-            margin-right: 24px;
+
+            margin-right: 23px;
         }
 
         &__code {
             color: #bec6cf;
             width: 138px;
-            padding: 15px 10px 14px 20px;
+            padding: 15px 80px 6px 20px;
             border: 1px solid $color-border;
-            font-family: $font-family-arial;        
-            margin-right: 15px;
-            background: url(./../img/hint.png) no-repeat 95px 10px;
+            font-family: $font-family-arial;
+            margin-right: 12px;
+            background: url(./../img/hint.png) no-repeat 104px 6px;
             background-size: 26px;
         }
     }
 
     &-button {
+
         &__payment {
-            margin-bottom: 45px;
+            margin-left: 15px;
             width: 133px;
             padding: 12px;
             border: none;
@@ -151,6 +157,7 @@
             outline: none;
             transition: 0.6s;
 
+
             &:hover {
                 transition: all 0.6s ease-in-out;
                 transform: scale(1.1);
@@ -159,9 +166,6 @@
         }
 
     }
-
-
-
 }
 
 input::-webkit-outer-spin-button,
@@ -170,3 +174,5 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
+
+/* End Card Style */
