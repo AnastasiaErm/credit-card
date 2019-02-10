@@ -4,7 +4,13 @@
     &__form {
 
         position: relative;
-        width: 350px;
+        @include mobile {
+            width: 336px;
+        }
+        @include tablet {
+            width: 350px;
+        }
+
     }
 
     &__title {
@@ -17,6 +23,7 @@
     }
 
     &-content {
+
         position: relative;
         background-color: $color-card;
         z-index: 999;
@@ -52,6 +59,15 @@
             &s {
                 border: 0 none;
             }
+            @include mobile {
+                padding: 4px 3px 3px 4px;
+            }
+            @include tablet {
+                padding: 9px 10px 10px 11px;
+            }
+            @include desktop {
+                padding: 9px 10px 10px 11px;
+            }
         }
 
         &__time {
@@ -82,7 +98,7 @@
 
         &__person {
             color: #bec6cf;
-            padding: 12px 176px 10px 12px;
+            padding: 12px 162px 10px 12px;
             width: 319px;
             border: 1px solid $color-border;
             font-family: $font-family-arial;
@@ -93,7 +109,15 @@
             &::placeholder {
                 color: #bec6cf;
             }
+            @include mobile {
+                width: 305px;
+            }
+            @include tablet {
+                width: 319px;
+            }
+            
         }
+
     }
 
     &-back {
@@ -101,8 +125,6 @@
         text-align: end;
         background-color: $color-card;
         width: 370px;
-        top: 22px;
-        left: 192px;
         border: 1px solid $color-border;
         border-radius: 10px;
         padding-bottom: 87px;
@@ -128,6 +150,7 @@
         }
 
         &__code {
+
             color: #bec6cf;
             width: 138px;
             padding: 15px 80px 6px 20px;
@@ -136,6 +159,23 @@
             margin-right: 12px;
             background: url(./../img/hint.png) no-repeat 104px 6px;
             background-size: 26px;
+        }
+        @include mobile {
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 320px;
+        }
+        @include tablet {
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+        @include desktop {
+            position: absolute;
+            top: 22px;
+            left: 192px;
+            width: 370px;
         }
     }
 
@@ -162,6 +202,12 @@
                 transition: all 0.6s ease-in-out;
                 transform: scale(1.1);
 
+            }
+            @include mobile {
+                margin-top: 20px;
+            }
+            @include tablet {
+                margin-top: 0;
             }
         }
 
