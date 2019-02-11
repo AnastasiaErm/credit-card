@@ -55,7 +55,7 @@
             width: 65px;
             margin-right: 4px;
             margin-bottom: 13px;
-
+    
             &s {
                 border: 0 none;
             }
@@ -122,7 +122,7 @@
 
     &-back {
         position: absolute;
-        text-align: end;
+        text-align: right;
         background-color: $color-card;
         width: 370px;
         border: 1px solid $color-border;

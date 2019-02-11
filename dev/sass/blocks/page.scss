@@ -11,21 +11,22 @@
         color: $color-grey;
         line-height: 21px;
 
-
-
         &__data {
-            background-color: $color-card;
-           
+
             @include mobile {
                 padding: 43px 122px 35px 50px;
             }
             @include tablet {
                 padding: 43px 161px 45px 30px;
             }
+            @include desktop {
+                padding: 43px 161px 45px 30px;
+            }
             
         }
 
         &__content {
+            background-color: $color-card;
             width: 639px;
             @include mobile {
                 width: 399px;

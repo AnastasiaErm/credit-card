@@ -28,7 +28,7 @@
         </div>
 
         <div class="page-main__content">
-            <main class="page-main__data">
+            <div class="page-main__data">
                 <!-- Beginning User Form Verification Card  -->
                 <section class="data">
                     <h3 class="data__title">
@@ -50,10 +50,10 @@
                         <div class="card-content">
                             <fieldset class="card-content__numbers">
                                 <legend class="card-content__title-num">Номер карты</legend>
-                                <input name="card-number-1" class="card-content__number" type="number">
-                                <input name="card-number-2" class="card-content__number" type="number">
-                                <input name="card-number-3" class="card-content__number" type="number">
-                                <input name="card-number-4" class="card-content__number" type="number">
+                                <input name="card-number" class="card-content__number" type="number">
+                                <input name="card-number" class="card-content__number" type="number">
+                                <input name="card-number" class="card-content__number" type="number">
+                                <input name="card-number" class="card-content__number" type="number">
 
                             </fieldset>
                             <fieldset class="card-content__time">
@@ -83,7 +83,7 @@
                                     <option class="year__item" value="2023">2023</option>
                                 </select>
                             </fieldset>
-                            <input class="card-content__person" placeholder="Держатель карты" type="text">
+                            <input class="card-content__person" name="person" placeholder="Держатель карты" type="text">
                         </div>
                         <div class="card-back">
                             <h3 class="card-back__title-code">
@@ -92,13 +92,13 @@
                             <input name="code" class="card-back__code" type="number">
                         </div>
                         <div class="card-button">
-                            <input name="button-payment" type="button" class="card-button__payment" value="Оплатить">
+                            <input name="button-payment" type="submit" class="card-button__payment" value="Оплатить">
                         </div>
                     </form>
 
                     <!-- End User Form Verification Card  -->
                 </section>
-            </main>
+            </div>
             <footer class="description page-main__description">
                 <!-- Beginning Description  -->
                 <p class="description__text">
@@ -128,7 +128,7 @@
         </div>
 
     </div>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="assets/js/bundle.js"></script>
 </body>
 
