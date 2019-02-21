@@ -1,6 +1,8 @@
 # credit-card
 Тестовое задание от ИДАГРУПП.
 
+:link: [Ссылка](https://anastasiaerm.github.io/credit-card/index.html)
+
 ![credit-card](https://raw.githubusercontent.com/AnastasiaErm/credit-card/master/mission/project.png)
 
 ## :books: Features
