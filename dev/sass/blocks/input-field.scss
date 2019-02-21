@@ -1,0 +1,89 @@
+/* Beginning input-field Style */
+.input-field {
+    position: relative;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+
+    &__number {
+        border: 1px solid $color-border;
+        padding: 9px 10px 10px 11px;
+        font-family: $font-family-arial;
+        font-size: $font-size-card;
+        text-align: center;
+        color: #bec6cf;
+        font-weight: normal;
+        line-height: 21px;
+        width: 65px;
+        margin-right: 4px;
+        margin-bottom: 13px;
+
+        @include mobile {
+            padding: 4px 3px 3px 4px;
+        }
+
+        @include tablet {
+            padding: 9px 10px 10px 11px;
+        }
+
+        @include desktop {
+            padding: 9px 10px 10px 11px;
+        }
+    }
+
+    &__input {
+        color: #bec6cf;
+        padding: 12px 162px 10px 12px;
+        width: 319px;
+        border: 1px solid $color-border;
+        font-family: $font-family-arial;
+        font-weight: normal;
+        line-height: 21px;
+
+
+        &::placeholder {
+            color: #bec6cf;
+        }
+
+        @include mobile {
+            width: 305px;
+        }
+
+        @include tablet {
+            width: 319px;
+        }
+        &--code {
+            color: #bec6cf;
+            width: 138px;
+            padding: 15px 80px 6px 20px;
+            border: 1px solid $color-border;
+            font-family: $font-family-arial;
+            background: url(./../img/hint.png) no-repeat 104px 6px;
+            background-size: 26px;
+        }
+    }
+
+    &__label {
+        margin-bottom: 4px;
+        margin-right: 23px;
+        color: $color-grey;
+        font-family: "$font-family-arial";
+        font-size: $font-size-card;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 21px;
+        cursor: text;
+
+        &--hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            border: 0;
+            padding: 0;
+            clip: rect(0 0 0 0);
+            overflow: hidden;
+        }
+    }
+}
+/* End input-field Style */

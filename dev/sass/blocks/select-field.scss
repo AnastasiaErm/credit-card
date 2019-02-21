@@ -1,0 +1,26 @@
+/* Beginning select-field Style */
+.select-field {
+    display: inline-block;
+    vertical-align: top;
+
+    &__select {
+        font-size: $font-size-card;
+        border: 1px solid $color-border;
+        width: 70px;
+        padding: 10px;
+        margin-right: 4px;
+        margin-bottom: 7px;
+
+        &--month {
+            padding-right: 14px;
+            width: 70px;
+            margin-right: 4px;
+        }
+
+        &--year {
+            padding-right: 10px;
+            width: 86px;
+        }
+    }
+}
+/* End select-field Style */

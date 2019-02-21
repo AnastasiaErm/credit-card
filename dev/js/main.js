@@ -1,8 +1,8 @@
 require('modules');
 let form = $('.card__form'),
-    code = form.find('.card-back__code'),
-    person = form.find('.card-content__person'),
-    numbers = form.find('.card-content__number');
+    code = form.find('.input-field__input--code'),
+    person = form.find('.input-field__input--person'),
+    numbers = form.find('.input-field__number');
 
 form.on('submit', function () {
   event.preventDefault();

@@ -34,7 +34,7 @@
         transition: 0.4s;
         margin-bottom: 36px;
 
-        &__title-num {
+        &__title {
             margin-bottom: 3px;
         }
 
@@ -43,31 +43,8 @@
             transition: 0.6s;
         }
 
-        &__number {
-            border: 1px solid $color-border;
-            padding: 9px 10px 10px 11px;
-            font-family: $font-family-arial;
-            font-size: $font-size-card;
-            text-align: center;
-            color: #bec6cf;
-            font-weight: normal;
-            line-height: 21px;
-            width: 65px;
-            margin-right: 4px;
-            margin-bottom: 13px;
-    
-            &s {
-                border: 0 none;
-            }
-            @include mobile {
-                padding: 4px 3px 3px 4px;
-            }
-            @include tablet {
-                padding: 9px 10px 10px 11px;
-            }
-            @include desktop {
-                padding: 9px 10px 10px 11px;
-            }
+        &__numbers {
+                border: 0 none;           
         }
 
         &__time {
@@ -75,47 +52,8 @@
             margin-bottom: 5px;
         }
 
-        &__month,
-        &__year {
-            font-size: $font-size-card;
-            border: 1px solid $color-border;
-            width: 70px;
-            padding: 10px;
-            margin-right: 4px;
-            margin-bottom: 7px;
-
-        }
-
-        &__month {
-            padding-right: 14px;
-            width: 70px;
-        }
-
-        &__year {
-            padding-right: 10px;
-            width: 86px;
-        }
-
         &__person {
-            color: #bec6cf;
-            padding: 12px 162px 10px 12px;
-            width: 319px;
-            border: 1px solid $color-border;
-            font-family: $font-family-arial;
-            font-weight: normal;
-            line-height: 21px;
-
-
-            &::placeholder {
-                color: #bec6cf;
-            }
-            @include mobile {
-                width: 305px;
-            }
-            @include tablet {
-                width: 319px;
-            }
-            
+            width: 100%;  
         }
 
     }
@@ -140,26 +78,11 @@
             margin-bottom: 14px;
         }
 
-        &__title-code {
-            margin-bottom: 4px;
-            color: $color-grey;
-            font-family: "$font-family-arial";
-            font-size: $font-size-card;
-
-            margin-right: 23px;
-        }
-
         &__code {
-
-            color: #bec6cf;
+            margin-right: 15px;
             width: 138px;
-            padding: 15px 80px 6px 20px;
-            border: 1px solid $color-border;
-            font-family: $font-family-arial;
-            margin-right: 12px;
-            background: url(./../img/hint.png) no-repeat 104px 6px;
-            background-size: 26px;
         }
+    
         @include mobile {
             position: relative;
             top: 0;
@@ -180,8 +103,6 @@
     }
 
     &-button {
-
-        &__payment {
             margin-left: 15px;
             width: 133px;
             padding: 12px;
@@ -210,8 +131,6 @@
                 margin-top: 0;
             }
         }
-
-    }
 }
 
 input::-webkit-outer-spin-button,

@@ -31,15 +31,16 @@
             <div class="page-main__data">
                 <!-- Beginning User Form Verification Card  -->
                 <section class="data">
-                    <h3 class="data__title">
+                    <h1 class="data__title">Форма оплаты банковской картой</h1>
+                    <h2 class="data__info">
                         Информация по оплате:
-                    </h3>
-                    <div class="data__list">
-                        <h3 class="data__score">Номер счета:</h3>
-                        <h3 class="data__value">87123658716587</h3>
-                        <h3 class="data__payment">Сумма платежа:</h3>
-                        <h3 class="data__value">100 руб.</h3>
-                    </div>
+                    </h2>
+                    <dl class="data__list">
+                        <dt class="data__score">Номер счета:</dt>
+                        <dd class="data__value">87123658716587</dd>
+                        <dt class="data__payment">Сумма платежа:</dt>
+                        <dd class="data__value">100 руб.</dd>
+                    </dl>
                 </section>
 
                 <section class="card">
@@ -49,51 +50,66 @@
                     <form class="card__form">
                         <div class="card-content">
                             <fieldset class="card-content__numbers">
-                                <legend class="card-content__title-num">Номер карты</legend>
-                                <input name="card-number" class="card-content__number" type="number">
-                                <input name="card-number" class="card-content__number" type="number">
-                                <input name="card-number" class="card-content__number" type="number">
-                                <input name="card-number" class="card-content__number" type="number">
+                                <legend class="card-content__title">Номер карты</legend>
+                                <label class="input-field card-content__number">
+                                    <input type="number" name="card-number-1" class="input-field__number">
+                                </label>
 
+                                <label class="input-field card-content__number">
+                                    <input type="number" name="card-number-2" class="input-field__number">
+                                </label>
+
+                                <label class="input-field card-content__number">
+                                    <input type="number" name="card-number-3" class="input-field__number">
+                                </label>
+
+                                <label class="input-field card-content__number">
+                                    <input type="number" name="card-number-4" class="input-field__number">
+                                </label>
                             </fieldset>
                             <fieldset class="card-content__time">
-                                <legend class="card-content__title-num">
+                                <legend class="card-content__title">
                                     Срок действия
                                 </legend>
-                                <select class="month card-content__month" name="card-validation-month">
-                                    <option class="month__item" value="1">01</option>
-                                    <option selected="selected" class="month__item" value="2">02</option>
-                                    <option class="month__item" value="3">03</option>
-                                    <option class="month__item" value="4">04</option>
-                                    <option class="month__item" value="5">05</option>
-                                    <option class="month__item" value="6">06</option>
-                                    <option class="month__item" value="7">07</option>
-                                    <option class="month__item" value="8">08</option>
-                                    <option class="month__item" value="9">09</option>
-                                    <option class="month__item" value="10">10</option>
-                                    <option class="month__item" value="11">11</option>
-                                    <option class="month__item" value="12">12</option>
-                                </select>
-
-                                <select class="year card-content__year" name="card-validation-year">
-                                    <option class="year__item" value="2019">2019</option>
-                                    <option class="year__item" value="2020">2020</option>
-                                    <option class="year__item" value="2021">2021</option>
-                                    <option class="year__item" value="2022">2022</option>
-                                    <option class="year__item" value="2023">2023</option>
-                                </select>
+                                <label for="month" class="select-field card-content__month">
+                                    <select class="select-field__select select-field__select--month" name="card-validation-month" id="month">
+                                        <option class="select-field__option" value="1">01</option>
+                                        <option selected="selected" class="select-field__option" value="2">02</option>
+                                        <option class="select-field__option" value="3">03</option>
+                                        <option class="select-field__option" value="4">04</option>
+                                        <option class="select-field__option" value="5">05</option>
+                                        <option class="select-field__option" value="6">06</option>
+                                        <option class="select-field__option" value="7">07</option>
+                                        <option class="select-field__option" value="8">08</option>
+                                        <option class="select-field__option" value="9">09</option>
+                                        <option class="select-field__option" value="10">10</option>
+                                        <option class="select-field__option" value="11">11</option>
+                                        <option class="select-field__option" value="12">12</option>
+                                    </select>
+                                </label>
+                                <label for="year" class="select-field card-content__year">
+                                    <select class="select-field__select select-field__select--year" name="card-validation-year" id="year">
+                                        <option class="select-field__option" value="2019">2019</option>
+                                        <option class="select-field__option" value="2020">2020</option>
+                                        <option class="select-field__option" value="2021">2021</option>
+                                        <option class="select-field__option" value="2022">2022</option>
+                                        <option class="select-field__option" value="2023">2023</option>
+                                    </select>
+                                </label>
                             </fieldset>
-                            <input class="card-content__person" name="person" placeholder="Держатель карты" type="text">
+
+                            <label class="input-field card-content__person">
+                                <span class="input-field__label input-field__label--hidden">Держатель карты</span>
+                                <input class="input-field__input input-field__input--person" name="person" placeholder="Держатель карты" type="text">
+                            </label>
                         </div>
                         <div class="card-back">
-                            <h3 class="card-back__title-code">
-                                Код CVV2 / CVC2
-                            </h3>
-                            <input name="code" class="card-back__code" type="number">
+                            <label class="input-field card-back__code">
+                                <span class="input-field__label">Код CVV2 / CVC2</span>
+                                <input type="number" name="card-code" class="input-field__input input-field__input--code">
+                            </label>
                         </div>
-                        <div class="card-button">
-                            <input name="button-payment" type="submit" class="card-button__payment" value="Оплатить">
-                        </div>
+                        <button type="submit" class="card-button">Оплатить</button>
                     </form>
 
                     <!-- End User Form Verification Card  -->

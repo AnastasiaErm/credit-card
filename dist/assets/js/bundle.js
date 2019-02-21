@@ -2214,10 +2214,10 @@ module.exports = function (hash, moduleMap, options) {
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(16);
-var form = $('.card__form'),
-    code = form.find('.card-back__code'),
-    person = form.find('.card-content__person'),
-    numbers = form.find('.card-content__number');
+let form = $('.card__form'),
+    code = form.find('.input-field__input--code'),
+    person = form.find('.input-field__input--person'),
+    numbers = form.find('.input-field__number');
 
 form.on('submit', function () {
   event.preventDefault();

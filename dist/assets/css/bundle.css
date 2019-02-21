@@ -182,6 +182,17 @@
 /* End Menu Style */
 /* Beginning Data Style */
 .data__title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.data__info {
   margin-bottom: 19px;
 }
 
@@ -253,7 +264,7 @@
   margin-bottom: 36px;
 }
 
-.card-content__title-num {
+.card-content__title {
   margin-bottom: 3px;
 }
 
@@ -265,7 +276,14 @@
   transition: 0.6s;
 }
 
-.card-content__number {
+.input-field {
+  position: relative;
+  display: inline-block;
+  text-align: left;
+  vertical-align: top;
+}
+
+.input-field__number {
   border: 1px solid #e4e9ee;
   padding: 9px 10px 10px 11px;
   font-family: "Arial", sans-serif;
@@ -284,19 +302,19 @@
 }
 
 @media screen and (min-width: 320px) {
-  .card-content__number {
+  .input-field__number {
     padding: 4px 3px 3px 4px;
   }
 }
 
 @media screen and (min-width: 720px) {
-  .card-content__number {
+  .input-field__number {
     padding: 9px 10px 10px 11px;
   }
 }
 
 @media screen and (min-width: 1000px) {
-  .card-content__number {
+  .input-field__number {
     padding: 9px 10px 10px 11px;
   }
 }
@@ -306,7 +324,12 @@
   margin-bottom: 5px;
 }
 
-.card-content__month, .card-content__year {
+.select-field {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.select-field__select {
   font-size: 16px;
   border: 1px solid #e4e9ee;
   width: 70px;
@@ -315,17 +338,29 @@
   margin-bottom: 7px;
 }
 
-.card-content__month {
+.select-field__select--month {
   padding-right: 14px;
   width: 70px;
+  margin-right: 4px;
 }
 
-.card-content__year {
+.select-field__select--year {
   padding-right: 10px;
   width: 86px;
 }
 
 .card-content__person {
+  width: 100%;
+}
+
+.input-field {
+  position: relative;
+  display: inline-block;
+  text-align: left;
+  vertical-align: top;
+}
+
+.input-field__input {
   color: #bec6cf;
   padding: 12px 162px 10px 12px;
   width: 319px;
@@ -335,20 +370,42 @@
   line-height: 21px;
 }
 
-.card-content__person::-webkit-input-placeholder {
+.input-field__input::-webkit-input-placeholder {
   color: #bec6cf;
 }
 
-.card-content__person::-ms-input-placeholder {
+.input-field__input::-ms-input-placeholder {
   color: #bec6cf;
 }
 
-.card-content__person::placeholder {
+.input-field__input::placeholder {
   color: #bec6cf;
+}
+
+.input-field__label {
+  margin-bottom: 4px;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 21px;
+  color: #8494ab;
+  cursor: text;
+}
+
+.input-field__label--hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 @media screen and (min-width: 320px) {
-  .card-content__person {
+  .input-field__input {
     width: 305px;
   }
 }
@@ -371,6 +428,11 @@
   line-height: 21px;
 }
 
+.card-back__code {
+  margin-right: 15px;
+  width: 138px;
+}
+
 .card-back::before {
   content: '';
   display: block;
@@ -380,21 +442,19 @@
   margin-bottom: 14px;
 }
 
-.card-back__title-code {
+.input-field__label {
   margin-bottom: 4px;
   color: #8494ab;
-  font-family: "$font-family-arial";
+  font-family: "Arial", sans-serif;
   font-size: 16px;
-  margin-right: 23px;
 }
 
-.card-back__code {
+.input-field__input--code {
   color: #bec6cf;
   width: 138px;
   padding: 15px 80px 6px 20px;
   border: 1px solid #e4e9ee;
   font-family: "Arial", sans-serif;
-  margin-right: 12px;
   background: url(./../img/hint.png) no-repeat 104px 6px;
   background-size: 26px;
 }
@@ -425,7 +485,7 @@
   }
 }
 
-.card-button__payment {
+.card-button {
   margin-left: 15px;
   width: 133px;
   padding: 12px;
@@ -447,7 +507,7 @@
   transition: 0.6s;
 }
 
-.card-button__payment:hover {
+.card-button:hover {
   -webkit-transition: all 0.6s ease-in-out;
   -o-transition: all 0.6s ease-in-out;
   transition: all 0.6s ease-in-out;
@@ -457,13 +517,13 @@
 }
 
 @media screen and (min-width: 320px) {
-  .card-button__payment {
+  .card-button {
     margin-top: 20px;
   }
 }
 
 @media screen and (min-width: 720px) {
-  .card-button__payment {
+  .card-button {
     margin-top: 0;
   }
 }
